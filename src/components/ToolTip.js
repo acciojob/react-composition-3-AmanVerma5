@@ -6,7 +6,7 @@ const Tooltip=({text,children})=>{
     return(
         <div>
             {ishover && <div className="tooltiptext">{text}</div>}
-            <div className="tooltip" onMouseEnter={()=>setIsHover(true)} onMouseLeave={()=>setIsHover(false)}>{children}</div>
+            <div onMouseEnter={()=>setIsHover(true)} onMouseLeave={()=>setIsHover(false)}>{children}</div>
         </div>
     )
 
